@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/tomcat-coyote.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/tomcat-i18n-ja.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/tomcat-jdbc.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/tomcat-i18n-fr.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/ecj-4.3.1.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/tomcat-api.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/annotations-api.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/catalina-ant.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/jasper-el.jar"/>
+  <path value="/Agenda/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="Agenda"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/tomcat-i18n-es.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/servlet-api.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/tomcat-util.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/jsp-api.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/websocket-api.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/tomcat-dbcp.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/tomcat7-websocket.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/catalina-tribes.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/catalina.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/el-api.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/catalina-ha.jar"/>
+  <path value="D:/apache-tomcat/apache-tomcat-7.0.50/lib/jasper.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.jsf.core"/>
+  <el/>
+ </validation>
+ <aliases/>
+ <includes/>
+ <uris/>
+</kb-project>
