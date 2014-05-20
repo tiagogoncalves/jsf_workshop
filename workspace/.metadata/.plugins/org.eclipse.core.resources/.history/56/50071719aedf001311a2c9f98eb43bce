@@ -1,0 +1,26 @@
+package br.com.agenda.controller;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
+
+import br.com.agenda.models.Contato;
+
+@ManagedBean
+@ViewScoped
+public class ContatoMBean implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+
+	private Contato contato = new Contato();
+    private List<Contato> contatoLista = new ArrayList<Contato>();
+
+}
+
+
+
+
+
