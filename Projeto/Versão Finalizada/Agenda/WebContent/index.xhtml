@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui" > 
+
+<h:head></h:head> 
+<body> 
+<h:form>
+	<h:panelGrid columns="3">
+
+			<p:outputLabel value="Nome:" />
+
+			<p:inputText id="nome" value="#{contatoMBean.contato.nome}" size="20"
+				required="true" requiredMessage="Campo Obrigatório" />
+
+			<p:message for="nome" />
+
+			<p:outputLabel value="Endereço:" />
+
+			<p:inputText id="end" value="#{contatoMBean.contato.endereco}" size="20"
+				required="true" requiredMessage="Campo Obrigatório" />
+
+			<p:message for="end" />
+
+			<p:outputLabel value="Número:" />
+
+			<p:inputText id="nro" value="#{contatoMBean.contato.numero}" size="20" />
+
+			<p:message for="nro" />
+
+			<p:outputLabel value="Telefone:" />
+
+			<p:inputText id="tel" value="#{contatoMBean.contato.telefone}" size="20" />
+
+			<p:message for="tel" />
+
+			<p:outputLabel value="Cidade:" />
+
+			<p:inputText id="mun" value="#{contatoMBean.contato.cidade}" size="20"
+				required="true" requiredMessage="Campo Obrigatório" />
+
+			<p:message for="mun" />
+
+			<p:commandButton id="btnSalvar" value="Salvar" update="tableContato" actionListener="#{contatoMBean.salvar}"/>
+			
+			<p:commandButton id="btLimpar" value="Limpar" type="reset"/>
+
+		</h:panelGrid>
+
+
+		<h:panelGrid>
+			<p:dataTable id="tableContato" value="#{contatoMBean.contatos}" var="contato"
+				title="Contatos Cadastrados" border="1" rows="10">
+				<p:column>
+					<f:facet name="header">
+						<h:outputText value="Nome" />
+					</f:facet>
+					<h:outputText value="#{contato.nome}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">
+						<h:outputText value="Endereço" />
+					</f:facet>
+					<h:outputText value="#{contato.endereco}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">
+						<h:outputText value="Número" />
+					</f:facet>
+					<h:outputText value="#{contato.numero}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">
+						<h:outputText value="Telefone" />
+					</f:facet>
+					<h:outputText value="#{contato.telefone}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">
+						<h:outputText value="Cidade" />
+					</f:facet>
+					<h:outputText value="#{contato.cidade}" />
+				</p:column>
+			</p:dataTable>
+		</h:panelGrid>
+	</h:form>
+</body> 
+</html>

@@ -1,2 +1,0 @@
-INDEX VERSION 1.126+C:\Users\Tiago\Documents\GitHub\jsf_workshop\workspace\.metadata\.plugins\org.eclipse.jdt.core
-3818532959.index
